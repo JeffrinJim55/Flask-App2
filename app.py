@@ -173,9 +173,9 @@ def get_chatbot_response(user_input):
         return "High blood pressure can cause headaches and dizziness.\nMaintain a healthy diet, reduce salt intake, and monitor regularly.\nConsult a doctor for medication."
     elif any(x in user_input for x in ['im suffering from pneumonia', 'Causes of pneumonia', 'how to cure pneumonia', 'how to cure pneumonia disease?','how to cure pneumonia disease']):
         return "Pneumonia causes fever, cough, difficulty breathing, and chest pain, often due to bacteria, viruses, or fungi. Treatment includes antibiotics or antivirals, rest, hydration, and medical care for severe symptoms.."
-    elif any(x in user_input for x in ['who is leena','leena','leena watson', 'who is leena mam', 'tell me something about leena watson',]):
+    elif any(x in user_input for x in ['who is leena','leena','leena watson', 'who is leena mam', 'tell me something about leena watson']):
         return "Dr. Leena Watson is a Lecturer in Noorul Islam Centre for Higer Education at Kumaracoil"
-    elif any(x in user_input for x in ['who is vigila','vigila','vigila mam', 'who is vigila mam', 'tell me something about vigila',]):
+    elif any(x in user_input for x in ['who is vigila','vigila','vigila mam', 'who is vigila mam', 'tell me something about vigila']):
         return "Dr. vigila is a Lecturer in Noorul Islam Centre for Higer Education at Kumaracoil"
     else:
         return 'I am sorry, I have no knowledge about this request! Ask me another request 😊'
