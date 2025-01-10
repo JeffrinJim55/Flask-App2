@@ -9,8 +9,24 @@ def get_chatbot_response(user_input):
     
     # Fixed conditionals for multiple options
 # General Disease Responses
-    if any(x in user_input for x in ['bi', 'bye', 'goodbye', 'good bi', 'good bye']):
+    if any(x in user_input for x in ['bi', 'bye', 'goodbye', 'good bi','goodbi','gdbi','bi da', 'good bye']):
         return 'Goodbye! Have a great day! 😊'
+    elif any(x in user_input for x in ['good morning', 'hi good morning', 'hai good morning','hai, good morning']):
+        return 'Good morning! 😊 I hope you have a fantastic start to your day. How can I assist you?'
+    elif any(x in user_input for x in ['good afternoon', 'hi good afternoon', 'hai good afternoon','hai, good afternoon']):
+        return "Good afternoon! 😊 I hope your day is going well. What can I help you with today?"  
+    elif any(x in user_input for x in ['good evening', 'hi good evening', 'hai good evening','hai, good evening','hi good evng','gd evng','gd evening']):
+        return "Good evening! 😊 I hope you had a great day. Let me know if there's anything I can assist you with."
+    elif any(x in user_input for x in ['good night', 'hi good night', 'hai good night','hai, good night','hi good night','gd night','gd night','good ni8','gd ni8','gd nt']):
+        return "Good night! 😊 Wishing you sweet dreams and a restful sleep. Take care!"
+    elif any(x in user_input for x in ['happy birthday', 'birthday', 'today is my birthday','today is my birthday wish me']):
+        return "Happy Birthday! 🎉🎂 I hope your day is filled with joy, love, and wonderful memories!"
+    elif any(x in user_input for x in ['anniversary', 'happy anniversary', 'today is my anniversary','today is my anniversary wish me']):
+        return "Happy Anniversary! 🎉 Wishing you many more years of happiness and love ahead!"
+    elif any(x in user_input for x in ['nice to meet u','nice to meet you','good to see you']):
+                return "Nice to meet you too! 😊 Let me know how I can help."
+    elif 'how are you' in user_input:
+        return "I'm just a bot, but I'm doing great! 😊 How about you?"
     elif any(x in user_input for x in ['hello', 'hi', 'hai']):
         return 'Hi there! How can I help you?'
     elif any(x in user_input for x in ['how are you', 'how about you', 'how its going', 'whats up']):
@@ -25,7 +41,7 @@ def get_chatbot_response(user_input):
         return "Jeffy is my Owner who creates me 😊"
     elif any(x in user_input for x in ['do you have crush', 'do you have girlfriend','do you have love','do you have lover','do you have any crush','do you have any girlfriend','do you have any girl friend','do you have any girlfruend' 'do you have girl friend','do you have any crush',]):
         return "Hahaha 😊. As an AI, I don't experience emotions like humans do, so I don't have a crush."
-    elif any(x in user_input for x in ['ok', 'good', 'tq','great','excellet','thank a lot','thank you so much','thank you soo much' 'thankyou', 'thank you', 'thanks']):
+    elif any(x in user_input for x in ['ok', 'keep it up', 'tq','great','excellet','thank a lot','thank you so much','thank you soo much' 'thankyou', 'thank you', 'thanks']):
         return "You're welcome! 😊"
     elif any(x in user_input for x in ['who is jeffy', 'who is jeffrin', 'who is Jeffrin']):
         return "Jeffy is my Owner who creates me 😊"
@@ -35,8 +51,6 @@ def get_chatbot_response(user_input):
         return "I'm your Ai Doctor Bot. I can assist you!"
     elif any(x in user_input for x in ['fever', 'my body is hot', 'temperature is high','i feel hot', 'i feel hot','i feel heat' ,'im suffering from fever', 'I m suffering from fever', 'i am suffering from fever']):
         return "I'm sorry you're feeling unwell 🥺. To manage fever: Stay hydrated, Rest, Apply a cool compress to your forehead, \nCommon tablets for fever: Paracetamol (e.g., Crocin, Calpol, Tylenol): For fever reduction and pain relief.\nIf the fever lasts more than 1-2 days, Consult a Doctor"
-    elif any(x in user_input for x in ['Increased body temperature', 'chills', 'sweating', 'headache', 'muscle aches', 'fatigue', 'loss of appetite', 'dehydration', 'flushed skin']):
-        return "Fever" 
     elif any(x in user_input for x in ['flu', 'influenza', 'cold', 'runny nose', 'fever', 'sore throat']):
         return "You might have the flu. Symptoms include fever, chills, body aches, and sore throat.\nRest, hydrate, and use paracetamol.\nIf symptoms last more than 3 days, consult a doctor."
     elif any(x in user_input for x in ['headache', 'migraine', 'pain in head', 'pain behind eyes']):
@@ -159,34 +173,10 @@ def get_chatbot_response(user_input):
         return "High blood pressure can cause headaches and dizziness.\nMaintain a healthy diet, reduce salt intake, and monitor regularly.\nConsult a doctor for medication."
     elif any(x in user_input for x in ['im suffering from pneumonia', 'Causes of pneumonia', 'how to cure pneumonia', 'how to cure pneumonia disease?','how to cure pneumonia disease']):
         return "Pneumonia causes fever, cough, difficulty breathing, and chest pain, often due to bacteria, viruses, or fungi. Treatment includes antibiotics or antivirals, rest, hydration, and medical care for severe symptoms.."
-    elif any(x in user_input for x in ['who is leena', 'who is leena mam', 'tell me something about leena watson',]):
+    elif any(x in user_input for x in ['who is leena','leena','leena watson', 'who is leena mam', 'tell me something about leena watson',]):
         return "Dr. Leena Watson is a Lecturer in Noorul Islam Centre for Higer Education at Kumaracoil"
-    elif 'good morning' in user_input:
-        return "Good morning! 😊 I hope you have a fantastic start to your day. How can I assist you?"
-    elif any(x in user_input for x in ['who is vigila', 'who is vigila mam', 'tell me something about vigila',]):
+    elif any(x in user_input for x in ['who is vigila','vigila','vigila mam', 'who is vigila mam', 'tell me something about vigila',]):
         return "Dr. vigila is a Lecturer in Noorul Islam Centre for Higer Education at Kumaracoil"
-    elif 'good afternoon' in user_input:
-        return "Good afternoon! 😊 I hope your day is going well. What can I help you with today?"  
-    elif 'good evening' in user_input:
-        return "Good evening! 😊 I hope you had a great day. Let me know if there's anything I can assist you with."
-    elif 'good night' in user_input:
-        return "Good night! 😊 Wishing you sweet dreams and a restful sleep. Take care!"
-    elif 'happy birthday' in user_input:
-        return "Happy Birthday! 🎉🎂 I hope your day is filled with joy, love, and wonderful memories!"
-    elif 'happy anniversary' in user_input:
-        return "Happy Anniversary! 🎉 Wishing you many more years of happiness and love ahead!"
-    elif 'good day' in user_input:
-        return "Good day! 😊 I hope everything is going smoothly for you. How can I assist you?"
-    elif 'goodbye' in user_input or 'bye' in user_input:
-        return "Goodbye! 😊 Take care and have a wonderful day ahead!"
-    elif 'have a great day' in user_input:
-        return "Thank you! 😊 Wishing you a fantastic day as well!"
-    elif 'good to see you' in user_input:
-        return "Good to see you too! 😊 How can I assist you today?"
-    elif 'nice to meet you' in user_input:
-        return "Nice to meet you too! 😊 Let me know how I can help."
-    elif 'how are you' in user_input:
-        return "I'm just a bot, but I'm doing great! 😊 How about you?"
     else:
         return 'I am sorry, I have no knowledge about this request! Ask me another request 😊'
 @app.route('/')
