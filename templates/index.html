@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="chat-container">
-        <h1>💬 Ai Doctor</h1>
+        <button id="back-button" onclick="goBack()">← Back</button>
+        <h1>💬 Ai Docter</h1>
         <div class="chat-box" id="chat-box">
             <div class="chat-log">
                 <p class="bot-message">Doctor: Hello! I'm here to assist you. Tell me your symptoms or disease name!</p>
@@ -25,6 +26,9 @@
     </footer>
 
     <script>
+    function goBack() {
+        window.location.href = 'https://jeffrinjim55.github.io/mainproject/';
+        }
         const chatForm = document.getElementById('chat-form');
         const chatBox = document.getElementById('chat-box');
 
