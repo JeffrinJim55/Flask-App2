@@ -9,7 +9,7 @@ def get_chatbot_response(user_input):
     
     # Fixed conditionals for multiple options
 # General Disease Responses
-    if any(x in user_input for x in ['bi', 'bye', 'goodbye', 'good bi', 'good bye','good bye doctor']):
+    if any(x in user_input for x in ['bi', 'bye', 'goodbye', 'good bi', 'good bye','good bye doctor','good bi ai doctor','good bye ai doctor']):
         return 'Goodbye! Have a great day! 😊'
     elif any(x in user_input for x in ['hello', 'hi', 'hai','hai doctor','hai ai doctor','hi doctor','hai ai doctor']):
         return 'Hi there! How can I help you?'
